@@ -4,4 +4,6 @@ FROM ubuntu:${VARIANT}
 
 RUN apt update
 RUN apt -y upgrade
+
 RUN apt -y install git
+RUN DEBIAN_FRONTEND="noninteractive" apt -y install golang
