@@ -9,14 +9,14 @@ func NewBag() *Bag {
 	return bag
 }
 
-func (bag *Bag) AddToken(token *Token) {
-	bag.Tokens = append(bag.Tokens, token)
+func (b *Bag) AddToken(t *Token) {
+	b.Tokens = append(b.Tokens, t)
 }
 
-func (bag *Bag) Name() string {
+func (b *Bag) Name() string {
 	name := "Bag: "
 
-	for _, token := range bag.Tokens {
+	for _, token := range b.Tokens {
 		name += token.Name()
 		name += ", "
 	}

@@ -9,5 +9,5 @@ var (
 func main() {
 	fmt.Println(bag.Name())
 	bag.AddToken(NewToken("White", 2))
-    fmt.Println(bag)
+	fmt.Println(bag)
 }
