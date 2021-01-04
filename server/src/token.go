@@ -12,5 +12,5 @@ func NewToken(ingredientType string, value int) *Token {
 }
 
 func (t *Token) Name() string {
-	return t.IngredientType + " " + strconv.Itoa(t.Value)
+	return t.IngredientType + "-" + strconv.Itoa(t.Value)
 }
