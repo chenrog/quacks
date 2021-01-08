@@ -1,0 +1,54 @@
+{
+  "spaces": [
+    {
+      "pointValue": 0,
+      "coinValue": 0,
+      "hasRuby": false
+    },
+    {
+      "pointValue": 1,
+      "coinValue": 0,
+      "hasRuby": false
+    },
+    {
+      "pointValue": 2,
+      "coinValue": 0,
+      "hasRuby": false
+    },
+    {
+      "pointValue": 3,
+      "coinValue": 0,
+      "hasRuby": false
+    },
+    {
+      "pointValue": 4,
+      "coinValue": 0,
+      "hasRuby": false
+    },
+    {
+      "pointValue": 5,
+      "coinValue": 0,
+      "hasRuby": true
+    },
+    {
+      "pointValue": 6,
+      "coinValue": 1,
+      "hasRuby": false
+    },
+    {
+      "pointValue": 7,
+      "coinValue": 1,
+      "hasRuby": false
+    },
+    {
+      "pointValue": 8,
+      "coinValue": 1,
+      "hasRuby": false
+    },
+    {
+      "pointValue": 9,
+      "coinValue": 1,
+      "hasRuby": true
+    }
+  ]
+}

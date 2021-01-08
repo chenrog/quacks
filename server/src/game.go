@@ -9,7 +9,7 @@ func NewGame() *Game {
 	game := &Game{}
 
 	game.Bag = NewBagFromJson("./domain/tokens.json")
-	game.Pot = NewPot()
+	game.Pot = NewPotFromJson("./domain/pot_spaces.json")
 
 	return game
 }
