@@ -7,6 +7,9 @@ var (
 )
 
 func main() {
-	fmt.Println(game.Bag.Name())
-	fmt.Println(game.Pot.Name())
+	fmt.Println(game.Name())
+	game.PlayToken()
+	game.PlayToken()
+	game.PlayToken()
+	fmt.Println(game.Name())
 }

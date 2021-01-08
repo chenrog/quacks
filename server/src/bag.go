@@ -4,7 +4,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"math/rand"
 	"os"
+	"time"
 )
 
 type Bag struct {
@@ -44,4 +46,16 @@ func (b *Bag) Name() string {
 	}
 
 	return name
+}
+
+func (b *Bag) GrabToken() Token {
+	token_count := len(b.Tokens)
+
+	rand.Seed(time.Now().UTC().UnixNano())
+	pick := rand.Intn(token_count)
+
+	token := *b.Tokens[pick]
+	b.Tokens[pick] = b.Tokens[token_count-1]
+	b.Tokens = b.Tokens[:token_count-1]
+	return token
 }

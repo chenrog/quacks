@@ -13,3 +13,12 @@ func NewGame() *Game {
 
 	return game
 }
+
+func (g *Game) PlayToken() {
+	token := g.Bag.GrabToken()
+	g.Pot.PlaceToken(token)
+}
+
+func (g *Game) Name() string {
+	return "Game:\n" + g.Bag.Name() + "\n" + g.Pot.Name()
+}
